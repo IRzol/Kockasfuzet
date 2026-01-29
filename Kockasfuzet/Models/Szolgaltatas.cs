@@ -8,22 +8,22 @@ namespace Kockasfuzet.Models
 {
     internal class Szolgaltatas
     {
-        int azon;
+        int id;
         string nev;
 
         public Szolgaltatas(int azon, string nev)
         {
-            this.azon = azon;
+            this.id = azon;
             this.nev = nev;
         }
         public Szolgaltatas() { }
 
-        public int Azon { get => azon; set => azon = value; }
+        public int Id { get => id; set => id = value; }
         public string Nev { get => nev; set => nev = value; }
 
         public override string ToString()
         {
-            return $"Id: {Azon},Név: {Nev}";
+            return $"Id: {Id},Név: {Nev}";
         }
     }
 }

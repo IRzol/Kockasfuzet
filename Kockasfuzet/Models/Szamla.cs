@@ -9,8 +9,8 @@ namespace Kockasfuzet.Models
     internal class Szamla
     {
         int id;
-        int szolgaltatoazon;
-        string szolgaltaorovidnev;
+        int szolgaltatasazon;
+        string szolgaltatorovid;
         DateTime tol;
         DateTime ig;
         int osszeg;
@@ -18,11 +18,15 @@ namespace Kockasfuzet.Models
         DateTime befizetve;
         string megjegyzes;
 
+        public Szamla()
+        {
+        }
+
         public Szamla(int id, int szolgaltatoazon, string szolgaltaorovidnev, DateTime tol, DateTime ig, int osszeg, DateTime hatarido, DateTime befizetve, string megjegyzes)
         {
             this.id = id;
-            this.szolgaltatoazon = szolgaltatoazon;
-            this.szolgaltaorovidnev = szolgaltaorovidnev;
+            this.szolgaltatasazon = szolgaltatoazon;
+            this.szolgaltatorovid = szolgaltaorovidnev;
             this.tol = tol;
             this.ig = ig;
             this.osszeg = osszeg;
@@ -32,8 +36,8 @@ namespace Kockasfuzet.Models
         }
 
         public int Id { get => id; set => id = value; }
-        public int Szolgaltatoazon { get => szolgaltatoazon; set => szolgaltatoazon = value; }
-        public string Szolgaltaorovidnev { get => szolgaltaorovidnev; set => szolgaltaorovidnev = value; }
+        public int Szolgaltatoazon { get => szolgaltatasazon; set => szolgaltatasazon = value; }
+        public string Szolgaltatorovid { get => szolgaltatorovid; set => szolgaltatorovid = value; }
         public DateTime Tol { get => tol; set => tol = value; }
         public DateTime Ig { get => ig; set => ig = value; }
         public int Osszeg { get => osszeg; set => osszeg = value; }

@@ -20,7 +20,7 @@ namespace Kockasfuzet.Models
         }
         public Szolgaltato() { }
 
-        public string Rovidnev { get => rovidnev; set => rovidnev = value; }
+        public string RovidNev { get => rovidnev; set => rovidnev = value; }
         public string Nev { get => nev; set => nev = value; }
         public string Ugyfelszolgalat { get => ugyfelszolgalat; set => ugyfelszolgalat = value; }
     }
