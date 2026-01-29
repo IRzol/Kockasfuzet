@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Szamla.cs" />
+    <Compile Include="Models\Szolgaltatas.cs" />
+    <Compile Include="Models\Szolgaltato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,7 +53,9 @@
     <None Include="App.config" />
     <None Include="Database\Kockás füzet.xlsx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Database\kockasfuzet %281%29.sql" />
     <Content Include="Database\sema.png" />
