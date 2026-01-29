@@ -48,9 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Database\Kockás füzet.xlsx" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Database\" />
+    <Content Include="Database\kockasfuzet %281%29.sql" />
+    <Content Include="Database\sema.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
