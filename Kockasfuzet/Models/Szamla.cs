@@ -22,11 +22,11 @@ namespace Kockasfuzet.Models
         {
         }
 
-        public Szamla(int id, int szolgaltatoazon, string szolgaltaorovidnev, DateTime tol, DateTime ig, int osszeg, DateTime hatarido, DateTime befizetve, string megjegyzes)
+        public Szamla(int id, int szolgaltatoazon, string szolgaltatorovidnev, DateTime tol, DateTime ig, int osszeg, DateTime hatarido, DateTime befizetve, string megjegyzes)
         {
             this.id = id;
             this.szolgaltatasazon = szolgaltatoazon;
-            this.szolgaltatorovid = szolgaltaorovidnev;
+            this.szolgaltatorovid = szolgaltatorovidnev;
             this.tol = tol;
             this.ig = ig;
             this.osszeg = osszeg;
@@ -36,7 +36,7 @@ namespace Kockasfuzet.Models
         }
 
         public int Id { get => id; set => id = value; }
-        public int Szolgaltatoazon { get => szolgaltatasazon; set => szolgaltatasazon = value; }
+        public int Szolgaltatasazon { get => szolgaltatasazon; set => szolgaltatasazon = value; }
         public string Szolgaltatorovid { get => szolgaltatorovid; set => szolgaltatorovid = value; }
         public DateTime Tol { get => tol; set => tol = value; }
         public DateTime Ig { get => ig; set => ig = value; }

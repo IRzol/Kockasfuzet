@@ -19,7 +19,7 @@ namespace Kockasfuzet.Views
         {
             Console.WriteLine("|-------------------+--------------------|");
             Console.WriteLine("|     Azonosító     |         Név        |");
-            Console.WriteLine("|-------------------|--------------------|");
+            Console.WriteLine("|-------------------+--------------------|");
             foreach (Szolgaltatas szolgaltatas in szolgaltataslista)
             {
                 Console.WriteLine(SzolgaltatasToRow(szolgaltatas));

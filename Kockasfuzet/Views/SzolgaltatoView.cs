@@ -36,8 +36,8 @@ namespace Kockasfuzet.Views
         public static string SzolgaltatoToRow(Szolgaltato szolgaltato)
         {
             string row = "|";
-            row += szolgaltato.RovidNev;
-            row += new string(' ', 8 - szolgaltato.RovidNev.Length) + "|";
+            if(szolgaltato.RovidNev.Length < 9) row += szolgaltato.RovidNev;
+            row += szolgaltato.RovidNev.Length < 9 ? new string(' ', 8 - szolgaltato.RovidNev.Length) + "|" : szolgaltato.RovidNev.Substring(0, 5) + "...|";
             row += szolgaltato.Nev.Length < 30 ? szolgaltato.Nev + new string(' ', 30 - szolgaltato.Nev.Length + 1) + " |" :
                 szolgaltato.Nev.Substring(0, 28) + "... |";
             row += szolgaltato.Ugyfelszolgalat.Length < 30 ? szolgaltato.Ugyfelszolgalat + new string(' ', 30 - szolgaltato.Ugyfelszolgalat.Length + 1) + " |             |" : szolgaltato.Ugyfelszolgalat.Substring(0, 28) + "... |             |";
